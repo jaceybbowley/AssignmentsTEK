@@ -1,37 +1,63 @@
 package com.perscholas.cafe;
 
-public class Product { 
-    public static void Main(String[] arg) {
-
-    // four private attributes (name, price, description, quantity)
-    // The class should also include a no-arg constructor and a constructor
-    // which takes three arguments for name, price and description. Next, 
-    // create getters and setters and include a method named 
-    // calculateProductTotal( ) which calculates the product subtotal 
-    // for the order. Create a driver class (i.e., class that includes 
-    // a main method) named CafeApp which creates three Product instances 
-    // named "coffee", "espresso" and "cappuccino". Assign descriptions 
-    // and prices to each product instance. Use the Scanner class to prompt 
-    // the user for the quantity of each product and then print the name,
-    // description and product subtotal for each after each prompt. Print 
-    // the sales subtotal, sales tax and sales total before exiting 
-    // the application.
+    import java.lang.reflect.Constructor;
     
-    private class Name {
-
-    }
-
-    private class Price {
-
-    }
-
-    private class Description {
-
-    }
-
-    private class Quantity {
+    public class Product {
+        private String productName;
+        private double productPrice;
+        private String productDescription;
+        private int productQuantity;
+        private double productTotal;
+    
+        public Product() {
+        }
+    
+        public Product(String productName, double productPrice, String productDescription) {
+            this.productName = productName;
+            this.productPrice = productPrice;
+            this.productDescription = productDescription;
+        }
+    
+        //Calculate PRODUCT SUBTOTAL
+        public double calculateProductTotal() {
+          productTotal = productPrice * productQuantity;
+          return productTotal;
+        }
+    
+        // Get/Set NAME
+        public String getProductName() {
+            return productName;
+        }
+        public void setProductName(String newName) {
+            this.productName = newName;
+        }
+    
+        // Get/Set PRICE
+        public double getProductPrice() {
+            return productPrice;
+        }
+        public void setProductPrice(double newPrice) {
+            this.productPrice = newPrice;
+        }
+    
+        // Get/Set DESCRIPTION
+        public String getProductDescription() {
+            return productDescription;
+        }
+        public void setProductDescription(String newDescription) {
+            this.productDescription = newDescription;
+        }
+    
+        // Get/Set QUANTITY
+        public int getProductQuantity() {
+            return productQuantity;
+        }
+        public void setProductQuantity(int newQuantity) {
+            this.productQuantity = newQuantity;
+        }
+    
 
  
     }
-  }
-}
+  
+

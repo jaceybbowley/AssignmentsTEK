@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/jaceybowley/Documents/Personal Documents/Education/Java Bootcamp/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar"
+    ]
+}
